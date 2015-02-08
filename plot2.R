@@ -16,7 +16,8 @@ df2 <- data.frame(feb0102_2007,datetimes)
 xDTS <- df2$datetimes
 yGAP <- df2$Global_active_power
 ##      plotting  and writing to file plot2.png
-png(file = "plot2.png",width=504,height=504) ## copy plot 2 to a PNG file
+# png(file = "figure/plot2.png",width=504,height=504) ## copy plot 2 to a PNG file
+png(file = "figure/plot2.png",width=480,height=480) ## copy plot 2 to a PNG file
 plot(xDTS, yGAP, type="l",ylab="Global Active Power (kilowatts)", xlab="",
      cex.lab = 1, cex.axis = 01)
 ## closing the PNG device

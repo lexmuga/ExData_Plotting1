@@ -16,7 +16,8 @@ df$Date <- as.Date(df$Date,"%d/%m/%Y")
 df2 <- df[df$Date == "2007-02-01" | df$Date == "2007-02-02",]
 ##
 ##      plotting histogram and saving to file plot1.png
-png(file = "plot1.png",width=504,height=504) 
+png(file = "figure/plot1.png",width=480,height=480) 
+# png(file = "plot1.png",width=504,height=504) 
 par(mar=c(5, 4, 3, 3),oma=c(0,0,0,0))
 hist(df2$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)",
      cex.main = 1, cex.lab = 1, cex.axis = 1)

@@ -17,7 +17,8 @@ ySM1 <- df2$Sub_metering_1
 ySM2 <- df2$Sub_metering_2
 ySM3 <- df2$Sub_metering_3
 ##      writing the graph to plot3.png
-png(file = "plot3.png",width=504,height=504) 
+# png(file = "plot3.png",width=504,height=504) 
+png(file = "figure/plot3.png",width=480,height=480) 
 #       Plotting the 3 Energy Sub Metering Types
 par(oma = c(0, 0.15, 0, 0))
 plot(xDTS,ySM1,xlab="",ylab="Energy sub metering", type="l",ylim = range(c(ySM1,ySM2,ySM3)),
