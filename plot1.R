@@ -1,6 +1,6 @@
-################################
+#############################
 ## plot1.R to graph plot1.png
-################################
+#############################
 ##      Reading the first 5 rows and 9 columns to determine the column classes 
 tab5rows <- read.table("household_power_consumption.txt",sep=";",header=TRUE,nrows=5)
 ##
