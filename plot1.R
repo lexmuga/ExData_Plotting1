@@ -15,7 +15,7 @@ df$Date <- as.Date(df$Date,"%d/%m/%Y")
 ##      Extracting the year 2007
 df2 <- df[df$Date == "2007-02-01" | df$Date == "2007-02-02",]
 ##
-##      plotting histogram and saving to file plot1.png
+##      plotting histogram and copy to file plot1.png
 png(file = "figure/plot1.png",width=480,height=480) 
 # png(file = "plot1.png",width=504,height=504) 
 par(mar=c(5, 4, 3, 3),oma=c(0,0,0,0))
